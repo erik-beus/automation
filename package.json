@@ -1,0 +1,22 @@
+{
+  "name": "automation",
+  "version": "0.0.1",
+  "description": "",
+  "main": "src/index.js",
+  "author": "Erik Beuschau",
+  "license": "MIT",
+  "dependencies": {
+    "@google-cloud/pubsub": "^0.19.0",
+    "sonos": "^1.4.0",
+    "tslib": "^1.9.3"
+  },
+  "devDependencies": {
+    "@types/google-cloud__pubsub": "^0.18.1",
+    "@types/node": "^10.5.6",
+    "typescript": "^3.0.1"
+  },
+  "scripts": {
+    "tsc": "rm -rf dist/ && node node_modules/typescript/bin/tsc -p ./tsconfig.json",
+    "tscw": "node node_modules/typescript/bin/tsc -p ./tsconfig.json -w"
+  }
+}
